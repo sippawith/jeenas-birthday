@@ -59,15 +59,7 @@ export function PolaroidStack({ items }: PolaroidStackProps) {
                     and put them in the /public folder.
                     Then uncomment the <img> tag below!
                   */}
-                  {<img src={`/${item.content.filename}`} loading="lazy" className="w-full h-full object-cover absolute inset-0 z-10" />}
-                  
-                  <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
-                  <span className="text-xs font-playful font-medium px-4 text-center">
-                    {item.content.label}
-                  </span>
-                  <span className="text-[10px] font-mono mt-2 opacity-60 bg-white/50 px-2 py-1 rounded">
-                    {item.content.filename}
-                  </span>
+                  {<img src={`/${item.content.filename}`} loading="lazy" className="w-full h-full object-cover absolute inset-0 z-10 bg-gray-100" />}
                   
                   {/* Film grain overlay just for the photo area */}
                   <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E')] mix-blend-overlay"></div>
@@ -89,7 +81,6 @@ export function PolaroidStack({ items }: PolaroidStackProps) {
         className="text-rose-400 font-playful text-sm text-center flex flex-col items-center mt-4"
       >
         <span>Tap photos to shuffle!</span>
-        <span className="text-xs">(Upload images to /public folder)</span>
       </motion.p>
     </div>
   );
