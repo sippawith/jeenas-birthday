@@ -25,6 +25,16 @@ export function PolaroidStack({ items }: PolaroidStackProps) {
 
   return (
     <div className="relative w-full h-96 flex flex-col items-center justify-center cursor-pointer" onClick={handleTap}>
+      {/* Helper text */}
+      <motion.p 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.8 }}
+        transition={{ delay: 1 }}
+        className="text-rose-400 font-playful text-sm text-center flex flex-col items-center mb-4 z-20"
+      >
+        <span>กดที่รูปเพื่อเปลี่ยนรูปจร้า</span>
+      </motion.p>
+      
       <div className="relative w-full h-80 flex items-center justify-center">
         <AnimatePresence>
           {stack.map((item, index) => {
@@ -72,16 +82,6 @@ export function PolaroidStack({ items }: PolaroidStackProps) {
           })}
         </AnimatePresence>
       </div>
-      
-      {/* Helper text */}
-      <motion.p 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ delay: 1 }}
-        className="text-rose-400 font-playful text-sm text-center flex flex-col items-center mt-4"
-      >
-        <span>Tap photos to shuffle!</span>
-      </motion.p>
     </div>
   );
 }
