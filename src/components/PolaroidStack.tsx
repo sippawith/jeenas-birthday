@@ -59,7 +59,7 @@ export function PolaroidStack({ items }: PolaroidStackProps) {
                     and put them in the /public folder.
                     Then uncomment the <img> tag below!
                   */}
-                  {<img src={`/${item.content.filename}`} className="w-full h-full object-cover absolute inset-0 z-10" />}
+                  {<img src={`/${item.content.filename}`} loading="lazy" className="w-full h-full object-cover absolute inset-0 z-10" />}
                   
                   <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
                   <span className="text-xs font-playful font-medium px-4 text-center">

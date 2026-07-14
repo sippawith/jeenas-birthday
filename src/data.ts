@@ -74,7 +74,6 @@ export const categories: Category[] = [
       { label: "🥺 Cute faces", filename: "you_being_you_3.jpg" },
       { label: "🎀 Princess moments", filename: "you_being_you_4.jpg" },
       { label: "💖 Just Jeena", filename: "you_being_you_5.jpg" },
-      { label: "💖 Just Jeena", filename: "you_being_you_5.jpg" },
       { label: "💖 Just Jeena", filename: "you_being_you_6.jpg" },
       { label: "💖 Just Jeena", filename: "you_being_you_7.jpg" },
       { label: "💖 Just Jeena", filename: "you_being_you_8.jpg" },
