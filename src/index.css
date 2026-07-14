@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;500;600&family=Itim&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-princess: "Dancing Script", "Itim", cursive;
+  --font-elegant: "Playfair Display", "Itim", serif;
+  --font-playful: "Quicksand", "Itim", sans-serif;
+
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-300: #fda4af;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+}
+
+@layer utilities {
+  .film-grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  .polaroid-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 2px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+}
+
+body {
+  background-color: #fff1f2; /* soft rose */
+  overflow: hidden; /* Prevent scrolling, we handle slides via motion */
+  -webkit-tap-highlight-color: transparent;
+}

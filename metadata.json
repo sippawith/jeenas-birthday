@@ -1,0 +1,6 @@
+{
+  "name": "Jeena's 18th Birthday",
+  "description": "A surprise 18th birthday website for Jeena from Poe, featuring a nostalgic film and princess theme with a photo slideshow and mini-game.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
